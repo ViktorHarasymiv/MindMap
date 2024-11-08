@@ -1,0 +1,307 @@
+header {
+    text-align: center;
+}
+
+main {
+    position: relative;
+}
+
+main::after {
+    z-index: -1;
+
+    position: absolute;
+
+    right: 0px;
+    bottom: -60px;
+    content: '';
+
+    width: 1000px;
+    height: 500px;
+
+    background: url(./../image/background.jpg) no-repeat;
+    
+}
+
+.page_title {
+cursor: default;
+
+margin: 25px 0px 20px;
+
+font-size: 62px;
+
+
+background: -webkit-linear-gradient(#e26600, #7a2df6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.book_tree--wrapper {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tree_list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.book_tree--wrapper img {
+width: 450px;
+max-height: 600px;
+}
+
+.book_tree--first .tree_hover_link {
+    cursor: pointer;
+
+    position: relative;
+
+    padding: 20px 25px;
+    
+    max-width: 550px;
+    
+
+    background: #7656f3;
+
+    border-radius: 50px;
+}
+
+.book_tree--two .tree_hover_link {
+    cursor: pointer;
+
+    position: relative;
+
+    padding: 20px 25px;
+    
+    max-width: 550px;
+    
+
+    background: #f45f20;
+
+    border-radius: 50px;
+}
+
+.tree_hover_link {
+     transition: all .5s ease-in;
+}
+
+.tree_hover_link:hover { 
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 25px;
+
+    background: rgb(234, 237, 242);
+    transition: all .3s ease-in;
+}
+
+.tree_hover_link h2 {
+    font-size: 15px;
+    color: #ffffff;
+    
+    letter-spacing: .4em;
+    line-height: 1.25em;
+    
+    font-weight: 400;
+
+    text-align: center;
+}
+
+.tree_hover_link:hover.tree_hover_link h2 
+{
+    color: #000000;
+}
+
+.content_block{
+    display: none;
+
+    cursor: pointer;
+    padding: 30px;
+
+    width: 600px;
+
+    background: rgba(72, 61, 139, 0.9);
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    color: #ffffff;
+
+    transition: all 0.5s ease-in;
+
+}
+
+.tree_hover_link_one:hover .content_block,
+.tree_hover_link_two:hover .content_block,
+.tree_hover_link_three:hover .content_block,
+.tree_hover_link_four:hover .content_block,
+.tree_hover_link_five:hover .content_block,
+.tree_hover_link_six:hover .content_block,
+.tree_hover_link_seven:hover .content_block,
+.tree_hover_link_eight:hover .content_block,
+.tree_hover_link_nine:hover .content_block {
+    display: block;
+
+    z-index: 1;
+    position: absolute;
+
+    top: 80px;
+    right: -500px;
+}
+
+.tree_hover_link_one:hover .content_block::before,
+.tree_hover_link_two:hover .content_block::before,
+.tree_hover_link_three:hover .content_block::before,
+.tree_hover_link_four:hover .content_block::before,
+.tree_hover_link_five:hover .content_block::before {
+    position: absolute;
+    content: '';
+
+    width: 20px;
+    height: 20px;
+
+    top: -8px;
+    left: 70px;
+
+    transform: rotate(135deg);
+
+    background: rgba(72, 61, 139, 0.9);
+}
+
+.tree_hover_link_six:hover .content_block::before,
+.tree_hover_link_seven:hover .content_block::before,
+.tree_hover_link_eight:hover .content_block::before,
+.tree_hover_link_nine:hover .content_block::before {
+    position: absolute;
+    content: '';
+
+    width: 20px;
+    height: 20px;
+
+    bottom: -8px;
+    left: 70px;
+
+    transform: rotate(135deg);
+
+    background: rgba(72, 61, 139, 0.9);
+}
+
+.tree_hover_link_four:hover .content_block {
+    top: 100px;
+}
+
+.tree_hover_link_six:hover .content_block {
+    top: -100px;
+}
+
+.content_block::before.tree_hover_link_eigh  {
+    bottom: 100px;
+}
+
+.tree_hover_link_seven:hover .content_block,
+.tree_hover_link_eight:hover .content_block,
+.tree_hover_link_nine:hover .content_block  {
+    top: -400px;
+}
+
+/*  L I S T  T W O  */
+
+.tree_hover_link_one {
+    position: relative;
+}
+
+.tree_hover_link_one::before{
+    position: absolute;
+    display: inline-block;
+    content: '';
+
+    width: 2px;
+    height: 350px;
+
+
+    top: 50px;
+    right: -60px;
+
+    transform: rotate(-19deg);
+
+    background: rgba(72, 61, 139, 1);
+
+    transition: all 0.3s ease-in;
+
+}
+
+.tree_hover_link_one:hover.tree_hover_link_one::before,
+.tree_hover_link_two:hover.tree_hover_link_two::before{
+    background: #ff0000;
+
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(255, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(255, 0, 0, 1);
+    box-shadow: 0px 10px 10px 0px rgba(255, 0, 0, 1);
+
+    transition: all 0.2s ease-in;
+}
+
+
+.tree_hover_link_two::before{
+    position: absolute;
+    content: '';
+
+    width: 2px;
+    height: 280px;
+
+
+    top: 45px;
+    right: -60px;
+
+    transform: rotate(-25deg);
+
+    background: rgba(72, 61, 139, 1);
+}
+
+.tree_hover_link_three::before{
+    position: absolute;
+    content: '';
+
+    width: 2px;
+    height: 210px;
+
+
+    top: 30px;
+    right: -65px;
+
+    transform: rotate(-30deg);
+
+    background: rgba(72, 61, 139, 1);
+}
+
+/* .tree_hover_link_four::before{
+    position: absolute;
+    content: '';
+
+    width: 2px;
+    height: 110px;
+
+
+    top: 15px;
+    right: -60px;
+
+    transform: rotate(-68deg);
+
+    background: #f45f20;
+} */
+
+/* .tree_hover_link_eight::before{
+    position: absolute;
+    content: '';
+
+    width: 2px;
+    height: 280px;
+
+
+    top: -240px;
+    right: -60px;
+
+    transform: rotate(22deg);
+
+    background: #f45f20;
+} */
