@@ -125,6 +125,8 @@ q {
   
 }
 
+@media not (hover:hover)
+
 /* @media (max-width: 1230px) {
   .container {
     max-width: 970px;
