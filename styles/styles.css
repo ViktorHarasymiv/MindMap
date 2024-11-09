@@ -1,134 +1,236 @@
 header {
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 main {
-    position: relative;
+  position: relative;
 }
 
 main::after {
-    z-index: -1;
+    content: "";
+  z-index: -1;
 
-    position: absolute;
+  position: absolute;
 
-    right: 0px;
-    bottom: -60px;
-    content: '';
+  width: 1100px;
+  height: 600px;
 
-    width: 1000px;
-    height: 500px;
-
-    background: url(./../image/background.jpg) no-repeat;
-    
+  right: 0;
+  bottom: -100px;
+  
+  background: url(./../image/background.jpg) 100%  100% no-repeat;
 }
 
+/*  H E A D E R  */
+
 .page_title {
-cursor: default;
+  cursor: default;
 
-margin: 25px 0px 20px;
+  margin: 15px 0px 15px;
 
-font-size: 62px;
+  font-size: 30px;
+  letter-spacing: 0.3em;
 
-
-background: -webkit-linear-gradient(#e26600, #7a2df6);
+  background: -webkit-linear-gradient(#e26600, #7a2df6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.nav_block {
+    margin-left: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 60px;
+
+
+}
+
+.nav_block span {
+  padding: 5px 15px;
+
+  display: block;
+  border-radius: 50px;
+
+  cursor: pointer;
+}
+
+.group {
+    font-size: 42px;
+    letter-spacing: 0.3em;
+
+    font-weight: 700;
+
+    background: -webkit-linear-gradient(#e26600, #7a2df6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.group:hover { 
+
+}
+
+.team-lead,
+.scrum-master {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 35px;
+    border: 1px solid #e26600;
+}
+
+.team-lead:hover,
+.scrum-master:hover {
+    background: #e26600;
+    color: #ffffff;
+}
 
 .book_tree--wrapper {
-    margin-top: 50px;
-    display: flex;
-    flex-direction: row;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
 
-    justify-content: space-between;
-    align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  align-items: center;
 }
 
 .tree_list {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
-.book_tree--wrapper img {
-width: 450px;
-max-height: 600px;
+.image_block {
+    position: relative;
+
+    margin: 0px 50px;
+
+    min-width: 450px;
+    max-height: 600px;
+}
+
+.image_block img {
+  min-width: 450px;
+  max-height: 600px;
+
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 15px 25px;
+}
+
+.book_tree--wrapper img:hover {
+    box-shadow: rgba(0, 0, 0, 1) 0px 5px 35px;
+}
+
+.book_about {
+    opacity: 0;
+padding: 15px;
+
+    position: absolute;
+    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: rgba(0, 0, 0, 1) 0px 5px 35px;
+
+    overflow: scroll;
+    transition: all 0.3s ease-in;
+}
+
+.book_about-text {
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 1.5em;
+}
+
+.book_about-text p {
+    font-size: 14;
+    font-weight: 600;
+}
+
+.image_block:hover .book_about {
+    opacity: 1;
+    transition: all 0.3s ease-in;
 }
 
 .book_tree--first .tree_hover_link {
-    cursor: pointer;
+  cursor: pointer;
 
-    position: relative;
+  position: relative;
 
-    padding: 20px 25px;
-    
-    max-width: 550px;
-    
+  padding: 20px 25px;
 
-    background: #7656f3;
+  max-width: 550px;
 
-    border-radius: 50px;
+  background: #7656f3;
+
+  border-radius: 50px;
 }
 
 .book_tree--two .tree_hover_link {
-    cursor: pointer;
+  cursor: pointer;
 
-    position: relative;
+  position: relative;
 
-    padding: 20px 25px;
-    
-    max-width: 550px;
-    
+  padding: 20px 25px;
 
-    background: #f45f20;
+  max-width: 550px;
 
-    border-radius: 50px;
+  background: #f45f20;
+
+  border-radius: 50px;
 }
 
 .tree_hover_link {
-     transition: all .5s ease-in;
+  
 }
 
-.tree_hover_link:hover { 
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 25px;
+.tree_hover_link:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 25px;
 
-    background: rgb(234, 237, 242);
-    transition: all .3s ease-in;
+  background: rgb(234, 237, 242);
+
+  transition: all 0.3s ease-in;
 }
 
 .tree_hover_link h2 {
-    font-size: 15px;
-    color: #ffffff;
-    
-    letter-spacing: .4em;
-    line-height: 1.25em;
-    
-    font-weight: 400;
+  font-size: 14px;
 
-    text-align: center;
+  color: #ffffff;
+
+  font-weight: 500;
+
+  text-align: center;
 }
 
-.tree_hover_link:hover.tree_hover_link h2 
-{
-    color: #000000;
+.tree_hover_link:hover.tree_hover_link h2 {
+  color: #000000;
 }
 
-.content_block{
-    display: none;
+.content_block {
+  display: none;
 
-    cursor: pointer;
-    padding: 30px;
+  cursor: pointer;
+  padding: 30px;
 
-    width: 600px;
+  width: 650px;
 
-    background: rgba(72, 61, 139, 0.9);
-    border-radius: 50px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    color: #ffffff;
+  background: rgba(72, 61, 139, 0.9);
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
-    transition: all 0.5s ease-in;
+  font-weight: 500;
+  font-size: 13px;
 
+  color: #ffffff;
+  overflow: hidden;
+}
+
+.content_block p {
+  font-weight: 500;
 }
 
 .tree_hover_link_one:hover .content_block,
@@ -140,13 +242,13 @@ max-height: 600px;
 .tree_hover_link_seven:hover .content_block,
 .tree_hover_link_eight:hover .content_block,
 .tree_hover_link_nine:hover .content_block {
-    display: block;
+  display: block;
 
-    z-index: 1;
-    position: absolute;
+  z-index: 1;
+  position: absolute;
 
-    top: 80px;
-    right: -500px;
+  top: 65px;
+  right: -500px;
 }
 
 .tree_hover_link_one:hover .content_block::before,
@@ -154,124 +256,127 @@ max-height: 600px;
 .tree_hover_link_three:hover .content_block::before,
 .tree_hover_link_four:hover .content_block::before,
 .tree_hover_link_five:hover .content_block::before {
-    position: absolute;
-    content: '';
+  z-index: 1;
+  position: absolute;
+  content: "";
 
-    width: 20px;
-    height: 20px;
+  width: 23px;
+  height: 23px;
 
-    top: -8px;
-    left: 70px;
+  top: -11px;
+  left: 70px;
 
-    transform: rotate(135deg);
+  transform: rotate(135deg);
 
-    background: rgba(72, 61, 139, 0.9);
+  background: rgb(234, 237, 242);
+}
+
+.tree_hover_link_four:hover .content_block {
+  top: 65px;
+}
+
+.tree_hover_link_six:hover .content_block {
+  top: -460px;
+}
+
+.content_block::before.tree_hover_link_eigh {
+  bottom: 100px;
+}
+
+
+.tree_hover_link_seven:hover .content_block{
+    top: -345px;
+}
+
+.tree_hover_link_eight:hover .content_block {
+  top: -310px;
+}
+
+.tree_hover_link_nine:hover .content_block { 
+    top: -330px;
 }
 
 .tree_hover_link_six:hover .content_block::before,
 .tree_hover_link_seven:hover .content_block::before,
 .tree_hover_link_eight:hover .content_block::before,
 .tree_hover_link_nine:hover .content_block::before {
-    position: absolute;
-    content: '';
+    z-index: 1;
+  position: absolute;
+  content: "";
 
-    width: 20px;
-    height: 20px;
+  width: 23px;
+  height: 23px;
 
-    bottom: -8px;
-    left: 70px;
+  bottom: -11px;
+  left: 70px;
 
-    transform: rotate(135deg);
+  transform: rotate(135deg);
 
-    background: rgba(72, 61, 139, 0.9);
-}
-
-.tree_hover_link_four:hover .content_block {
-    top: 100px;
-}
-
-.tree_hover_link_six:hover .content_block {
-    top: -100px;
-}
-
-.content_block::before.tree_hover_link_eigh  {
-    bottom: 100px;
-}
-
-.tree_hover_link_seven:hover .content_block,
-.tree_hover_link_eight:hover .content_block,
-.tree_hover_link_nine:hover .content_block  {
-    top: -400px;
+  background: rgb(234, 237, 242);
 }
 
 /*  L I S T  T W O  */
 
 .tree_hover_link_one {
-    position: relative;
+  position: relative;
 }
 
-.tree_hover_link_one::before{
-    position: absolute;
-    display: inline-block;
-    content: '';
+.tree_hover_link_one::before {
+  position: absolute;
+  display: inline-block;
+  content: "";
 
-    width: 2px;
-    height: 350px;
+  width: 2px;
+  height: 350px;
 
+  top: 50px;
+  right: -60px;
 
-    top: 50px;
-    right: -60px;
+  transform: rotate(-19deg);
 
-    transform: rotate(-19deg);
+  background: rgba(72, 61, 139, 1);
 
-    background: rgba(72, 61, 139, 1);
-
-    transition: all 0.3s ease-in;
-
+  transition: all 0.3s ease-in;
 }
 
 .tree_hover_link_one:hover.tree_hover_link_one::before,
-.tree_hover_link_two:hover.tree_hover_link_two::before{
-    background: #ff0000;
+.tree_hover_link_two:hover.tree_hover_link_two::before {
+  background: #ff0000;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(255, 0, 0, 1);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(255, 0, 0, 1);
+  box-shadow: 0px 10px 10px 0px rgba(255, 0, 0, 1);
 
-    -webkit-box-shadow: 0px 0px 10px 0px rgba(255, 0, 0, 1);
-    -moz-box-shadow: 0px 0px 10px 0px rgba(255, 0, 0, 1);
-    box-shadow: 0px 10px 10px 0px rgba(255, 0, 0, 1);
-
-    transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
+.tree_hover_link_two::before {
+  position: absolute;
+  content: "";
 
-.tree_hover_link_two::before{
-    position: absolute;
-    content: '';
+  width: 2px;
+  height: 280px;
 
-    width: 2px;
-    height: 280px;
+  top: 45px;
+  right: -60px;
 
+  transform: rotate(-25deg);
 
-    top: 45px;
-    right: -60px;
-
-    transform: rotate(-25deg);
-
-    background: rgba(72, 61, 139, 1);
+  background: rgba(72, 61, 139, 1);
 }
 
-.tree_hover_link_three::before{
-    position: absolute;
-    content: '';
+.tree_hover_link_three::before {
+  position: absolute;
+  content: "";
 
-    width: 2px;
-    height: 210px;
+  width: 2px;
+  height: 210px;
 
+  top: 30px;
+  right: -65px;
 
-    top: 30px;
-    right: -65px;
+  transform: rotate(-30deg);
 
-    transform: rotate(-30deg);
-
-    background: rgba(72, 61, 139, 1);
+  background: rgba(72, 61, 139, 1);
 }
 
 /* .tree_hover_link_four::before{

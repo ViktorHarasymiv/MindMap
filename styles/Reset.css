@@ -2,7 +2,8 @@
   font-family: "Ubuntu", serif;
   font-weight: 300;
   font-style: normal;
-  letter-spacing: 0.2em;
+  line-height: 1.25em;
+  letter-spacing: 0.2rem;
 }
 
 html,
@@ -76,8 +77,6 @@ td {
   outline: 0;
 }
 body {
-
-  line-height: 1;
   color: black;
   background: white;
 
@@ -110,7 +109,7 @@ q {
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -119,14 +118,14 @@ q {
 }
 
 .container {
-  max-width: 1890px;
+  max-width: 1790px;
 
   margin: 0px auto;
   padding: 0px 15px;
   
 }
 
-@media (max-width: 1230px) {
+/* @media (max-width: 1230px) {
   .container {
     max-width: 970px;
   }
@@ -142,4 +141,4 @@ q {
   .container {
     max-width: none;
   }
-}
+} */
