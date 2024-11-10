@@ -180,7 +180,7 @@ main::after {
   flex-direction: row;
 
   justify-content: space-between;
-  gap: 60px;
+  gap: 65px;
   align-items: center;
 }
 

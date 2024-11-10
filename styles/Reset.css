@@ -122,10 +122,6 @@ q {
 
   margin: 0px auto;
   padding: 0px 15px;
-  
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 /* @media (max-width: 1230px) {
