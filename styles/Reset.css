@@ -135,9 +135,15 @@ q {
     max-width: 750px;
   }
 }
+  
+*/
+
 
 @media (max-width: 767px) {
   .container {
     max-width: none;
   }
-} */
+  .book_tree--wrapper {
+    display: block;
+  }
+}
