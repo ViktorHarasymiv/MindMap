@@ -3,7 +3,7 @@
   font-weight: 300;
   font-style: normal;
   line-height: 1.25em;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
 }
 
 html,
@@ -123,9 +123,10 @@ q {
   margin: 0px auto;
   padding: 0px 15px;
   
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-@media not (hover:hover)
 
 /* @media (max-width: 1230px) {
   .container {

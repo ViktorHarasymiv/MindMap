@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=no">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
     <link rel="stylesheet"  type="text/css" href="./styles/styles.css">
     <link rel="stylesheet"  type="text/css" href="./styles/Reset.css">
 
@@ -14,26 +14,46 @@
 
 </head>
 <body>
-    <header>
-        <h1 class="page_title">Mind Map</h1>
+    <header class="container">
+        <div class="header_block">
+         <h1 class="page_title">Mind Map</h1>
         <nav class="nav_block">
             <span class="team-lead">Team Lead</span>
-            <span class="group">FullStack Legion</span>
-            <span class="scrum-master">Scrum Master</span>
+            <div class="group_box">
+                <h3>FullStack Legion</h3>
+                <div class="group_people_list">
+                    <h4>Group-02</h4>
+                    <ul class="people_list">
+                        <li class="people_link">Bogdan Nevechera</li>
+                        <li class="people_link">Natalia Jedynak</li>
+                        <li class="people_link">Pavel Ivanov</li>
+                        <li class="people_link">Тетяна Бистрова</li>
+                        <li class="people_link">Tharas Arthas</li>
+                        <li class="people_link">Victor Harasymiv</li>
+                        <li class="people_link">Yana Amelchenko</li>
+                        <li class="people_link">Yelyzaveta Musianovych</li>
+                        <li class="people_link">Артем Куліш</li>
+                        <li class="people_link">Льоша</li>
+                        <li class="people_link">Людмила</li>
+                    </ul>
+                </div>
+            </div>
+            <span class="scrum-master">Project Master</span>
         </nav>
+    </div>
     </header>
     <main class="main container">
       <section class="book_tree">
         <div class="book_tree--wrapper">
             <div class="book_tree--first">
-                <ul class="tree_list">               
+                <ul class="tree_list tree_list--one">               
                     <li class="tree_hover_link tree_hover_link_one">
                         <h2>1. Відчиняємо двері</h2>
-                        <span class="content_block">Навіть ті, хто вважає себе нездібними до математики та природничих наук, можуть досягти успіху в цих галузях, змінивши підхід до навчання і застосовуючи ефективні методики, що допоможуть розкрити природні здібності мозку та розвинути нове захоплення до навчання.</span>                  
+                        <span class="content_block list-one">Навіть ті, хто вважає себе нездібними до математики та природничих наук, можуть досягти успіху в цих галузях, змінивши підхід до навчання і застосовуючи ефективні методики, що допоможуть розкрити природні здібності мозку та розвинути нове захоплення до навчання.</span>                  
                     </li>
                     <li class="tree_hover_link tree_hover_link_two">
                         <h2>2. Геніальність у простоті</h2>
-                        <span class="content_block">
+                        <span class="content_block list-one">
                             <p> 1. Для ефективного вивчення математики та природничих наук важливо використовувати обидва режими мислення — сфокусований і розсіяний, щоб мозок поєднував глибоку концентрацію з творчими асоціаціями, для  кращого засвоювання й розуміння матеріалу</p>
                             <br>
                             <p>2. Математика та природничі науки складніші через їхню високу абстрактність, закодованість понять і наявність "ефекту установки", який заважає приймати нові підходи, що ускладнює опанування цих дисциплін без глибокого розуміння основ.</p>
@@ -44,7 +64,7 @@
                     </li>
                     <li class="tree_hover_link tree_hover_link_three">
                         <h2>3. Навчання - це творчість</h2>
-                        <span class="content_block">
+                        <span class="content_block list-one">
                             <p>1. «Щойно ми відволікаємося від нашого завдання, розпорошений режим мислення може вступити 
                                 в гру й почати оперувати думками у своїй широкомасштабній перспективі в пошуках розв’язання»</p>
                                 <br>
@@ -60,13 +80,13 @@
                     </li>
                     <li class="tree_hover_link tree_hover_link_four">
                         <h2>4. Фрагментація й уникання ілюзії знання</h2>
-                        <span class="content_block">
+                        <span class="content_block list-one">
                            NONE
                         </span>
                     </li>
                     <li class="tree_hover_link tree_hover_link_five">
                         <h2>5. Боротьба з відкладанням на потім</h2>
-                        <span class="content_block">
+                        <span class="content_block list-one">
                             <p>Ми відкладаємо на потім те, що приносить нам дискомфорт.</p>
                             <br>
                             <p>Цілком природно не любити те, чого ви не вмієте. Однак що краще ви це опановуєте, то більше насолоди вона вам дає.</p>
@@ -78,7 +98,7 @@
                     </li>
                     <li class="tree_hover_link tree_hover_link_six">
                         <h2>6. Скрізь зомбі</h2>
-                        <span class="content_block">
+                        <span class="content_block list-one">
                             Звичка — це коли наш мозок переходить у запрограмований (зазомбований) режим. Звички зберігають нашу енергію. Вони допомагають звільнити мозок для інших справ.
 Складові звички: 1.Зачіпка: це щось, що переводить вас у зазомбований режим. 2.Рутина: це і є ваш зазомбований режим, тобто звичний стан мозку, у який він входить, отримавши зачіпку. 3.Винагорода: звички з’являються й живуть через те, що дають нам певну винагороду у формі задоволення. 4.Віра: звички мають владу над вами через віру в них. 
 Найважливіше у зміні звички — визначити критичну точку, тобто вашу реакцію на зачіпку. Єдина дія, що потребуватиме сили волі, — зміна цієї реакції.
@@ -92,7 +112,7 @@
                     </li>
                     <li class="tree_hover_link tree_hover_link_seven">
                         <h2>7. Засвоєння замість заціпеніння</h2>
-                        <span class="content_block">
+                        <span class="content_block list-one">
                             <p>7. ЗАСВОЄННЯ ЗАМІСТЬ ЗАЦІПЕНІННЯ
                                 Основний принцип засвоєння це фрагментація пам’яті, тобто поділити матеріал на кроки/фрагменти.</p>
                                 <br>
@@ -110,7 +130,7 @@
                     </li>
                     <li class="tree_hover_link tree_hover_link_eight">
                         <h2>8. Поради,прийоми й інструментарії</h2>
-                        <span class="content_block">
+                        <span class="content_block list-one">
                             <p>8. ПОРАДИ, ПРИЙОМИ Й ІНСТРУМЕНТАРІЙ (для боротьби з відкладанням справ).
                                 Застосування медитації, щоб позбутися відволікальних думок зміну погляду на речі.
                                 Інші технічні прийоми, що позбавлять відволікання від справ.</p>
@@ -125,7 +145,7 @@
                     </li>
                     <li class="tree_hover_link tree_hover_link_nine">
                         <h2>9. Про зомбі-прокрастинації: робимо висновки</h2>
-                        <span class="content_block">
+                        <span class="content_block list-one">
                             <p>1. «Щойно ми відволікаємося від нашого завдання, розпорошений режим мислення може вступити 
                                 в гру й почати оперувати думками у своїй широкомасштабній перспективі в пошуках розв’язання»</p>
                                 <br>
@@ -201,7 +221,7 @@
             <ul class="tree_list">
                 <li class="tree_hover_link tree_hover_link_ten">
                     <h2>10. Розвиток пам'яті</h2>
-                    <span class="content_block">
+                    <span class="content_block list-two">
                         <p>1. «Щойно ми відволікаємося від нашого завдання, розпорошений режим мислення може вступити 
                             в гру й почати оперувати думками у своїй широкомасштабній перспективі в пошуках розв’язання»</p>
                             <br>
@@ -217,7 +237,7 @@
                 </li>
                 <li class="tree_hover_link tree_hover_link_eleven">
                     <h2>11. Ще трохи про пам'ять</h2>
-                    <span class="content_block">
+                    <span class="content_block list-two">
                         <p>1. «Щойно ми відволікаємося від нашого завдання, розпорошений режим мислення може вступити 
                             в гру й почати оперувати думками у своїй широкомасштабній перспективі в пошуках розв’язання»</p>
                             <br>
@@ -233,7 +253,7 @@
                 </li>
                 <li class="tree_hover_link tree_hover_link_twelve">
                     <h2>12. Вчимось цінувати свої таланти</h2>
-                    <span class="content_block">
+                    <span class="content_block list-two">
                         <p>1. «Щойно ми відволікаємося від нашого завдання, розпорошений режим мислення може вступити 
                             в гру й почати оперувати думками у своїй широкомасштабній перспективі в пошуках розв’язання»</p>
                             <br>
@@ -249,7 +269,7 @@
                 </li>
                 <li class="tree_hover_link tree_hover_link_thirteen">
                     <h2>13. Як самому "зліпити" свій мозок</h2>
-                    <span class="content_block">
+                    <span class="content_block list-two">
                         <p>1. «Щойно ми відволікаємося від нашого завдання, розпорошений режим мислення може вступити 
                             в гру й почати оперувати думками у своїй широкомасштабній перспективі в пошуках розв’язання»</p>
                             <br>
@@ -265,7 +285,7 @@
                 </li>
                 <li class="tree_hover_link tree_hover_link_fourteen">
                     <h2>14. Як розвивати "внутрішнє око" за допомогою поезії формул</h2>
-                    <span class="content_block">
+                    <span class="content_block list-two">
                         <p>1. «Щойно ми відволікаємося від нашого завдання, розпорошений режим мислення може вступити 
                             в гру й почати оперувати думками у своїй широкомасштабній перспективі в пошуках розв’язання»</p>
                             <br>
@@ -281,7 +301,7 @@
                 </li>
                 <li class="tree_hover_link tree_hover_link_fifteen">
                     <h2>15. Відродження навчання</h2>
-                    <span class="content_block">
+                    <span class="content_block list-two">
                         <p>1. «Щойно ми відволікаємося від нашого завдання, розпорошений режим мислення може вступити 
                             в гру й почати оперувати думками у своїй широкомасштабній перспективі в пошуках розв’язання»</p>
                             <br>
@@ -292,12 +312,13 @@
                         <br>
                         <p>5. «Умикаючи сфокусований режим знову, ви згромаджуєте нові ідеї й логічні схеми, які витворив 
                             розпорошений режим.»«Щоб якісно навчатися, потрібні часові проміжки між періодами зосередженого
-                             навчання, тоді нейронні схеми зможуть закріпитися. »</p>
+                             навчання, тоді нейронні схеми зможуть закріпитися. »
+                            </p>
                     </span>
                 </li>
                 <li class="tree_hover_link tree_hover_link_sixteen">
-                    <h2>16. Відродження навчання</h2>
-                    <span class="content_block">
+                    <h2>16. Як уникати надмірної самовпевненості</h2>
+                    <span class="content_block list-two">
                         <p>1. «Щойно ми відволікаємося від нашого завдання, розпорошений режим мислення може вступити 
                             в гру й почати оперувати думками у своїй широкомасштабній перспективі в пошуках розв’язання»</p>
                             <br>
@@ -312,8 +333,8 @@
                     </span>
                 </li>
                 <li class="tree_hover_link tree_hover_link_seventeen">
-                    <h2>17. Відродження навчання</h2>
-                    <span class="content_block">
+                    <h2>17. Тестування</h2>
+                    <span class="content_block list-two">
                         <p>1. «Щойно ми відволікаємося від нашого завдання, розпорошений режим мислення може вступити 
                             в гру й почати оперувати думками у своїй широкомасштабній перспективі в пошуках розв’язання»</p>
                             <br>
@@ -328,19 +349,12 @@
                     </span>
                 </li>
                 <li class="tree_hover_link tree_hover_link_eighteen">
-                    <h2>18. Відродження навчання</h2>
-                    <span class="content_block">
-                        <p>1. «Щойно ми відволікаємося від нашого завдання, розпорошений режим мислення може вступити 
-                            в гру й почати оперувати думками у своїй широкомасштабній перспективі в пошуках розв’язання»</p>
-                            <br>
-                        <p>2. «Залучення розсіяного режиму допомагає навчатися на глибинному креативному рівні.»</p>
-                        <br>
-                        <p>3. «Креативність — це опанування й розширення своїх схильностей. »</p>
-                        <p>4. «Пам`ятайте, що кожна знайдена хиба — це певний прогрес у розв’язуванні завдання»</p>
-                        <br>
-                        <p>5. «Умикаючи сфокусований режим знову, ви згромаджуєте нові ідеї й логічні схеми, які витворив 
-                            розпорошений режим.»«Щоб якісно навчатися, потрібні часові проміжки між періодами зосередженого
-                             навчання, тоді нейронні схеми зможуть закріпитися. »</p>
+                    <h2>18. Вивільніть свій потенціал</h2>
+                    <span class="content_block list-two">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat iure error, delectus harum voluptatibus corporis dolorem ea, rerum nobis soluta eius magni? Exercitationem eaque provident neque molestias harum cumque minus.
+                        Magnam eveniet cumque iste molestias cum vitae maxime quod, consequuntur quos fugiat, sit inventore odit quibusdam? Quae minima aliquam harum asperiores ex suscipit? Porro, qui quam autem in molestiae modi.
+                        Facilis, vero illo amet itaque ullam id, ipsa pariatur voluptatum soluta quo laboriosam labore, repellat explicabo obcaecati iste porro! Aperiam in saepe sint recusandae dignissimos provident aut maiores non adipisci.</p>
+                             
                     </span>
                 </li>
             </ul>
