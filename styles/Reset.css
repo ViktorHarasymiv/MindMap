@@ -121,6 +121,11 @@ q {
   max-width: 1790px;
 
   margin: 0px auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (max-width: 1230px) {
