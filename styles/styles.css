@@ -172,7 +172,7 @@ main {
   }
 } */
 
-/* .book_tree--wrapper::after {
+.book_tree--wrapper::after {
   content: "";
 z-index: -1;
 
@@ -187,7 +187,7 @@ bottom: 0px;
 background: url(./../image/background.jpg) no-repeat;
 background-position: 50%;
 
-} */
+} 
 
 .tree_list {
   display: flex;
@@ -200,13 +200,13 @@ background-position: 50%;
 
     margin: 0px 50px;
 
-    min-width: 450px;
-    max-height: 600px;
+    width: clamp(400px, 30vw, 450px);
+    height: clamp(550px, 20vh, 600px);
 }
 
 .image_block img {
-  min-width: 450px;
-  max-height: 600px;
+  width: clamp(400px, 20vw, 450px);
+  height: clamp(550px, 20vh, 600px);
 
   box-shadow: rgba(0, 0, 0, 0.5) 0px 15px 25px;
 }
@@ -217,7 +217,7 @@ background-position: 50%;
 
 .book_about {
     opacity: 0;
-padding: 15px;
+    padding: 15px;
 
     position: absolute;
     
@@ -237,6 +237,8 @@ padding: 15px;
     color: #ffffff;
     font-size: 13px;
     line-height: 1.5em;
+
+    overflow: hidden;
 }
 
 .book_about-text p {
@@ -255,7 +257,7 @@ padding: 15px;
 
   padding: 20px 25px;
 
-  width: 500px;
+  width: clamp(350px, 20vw, 500px);
 
   
   border-radius: 50px;

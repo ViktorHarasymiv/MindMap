@@ -118,13 +118,12 @@ q {
 }
 
 .container {
-  max-width: 1790px;
+  max-width: 1230px;
 
   margin: 0px auto;
-  padding: 0px 15px;
 }
 
-/* @media (max-width: 1230px) {
+@media (max-width: 1230px) {
   .container {
     max-width: 970px;
   }
@@ -135,15 +134,9 @@ q {
     max-width: 750px;
   }
 }
-  
-*/
-
 
 @media (max-width: 767px) {
   .container {
     max-width: none;
-  }
-  .book_tree--wrapper {
-    display: block;
   }
 }
