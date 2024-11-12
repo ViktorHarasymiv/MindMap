@@ -1,5 +1,4 @@
 /*  H E A D E R  */
-
 .header_block {
   text-align: center;
 }
@@ -57,7 +56,7 @@
 
 .list_line {
   display: block;
-  
+
   padding: 8px 15px;
 
   position: relative;
@@ -76,9 +75,9 @@
   bottom: -10px;
 
   border-top: 0 solid transparent;
-  border-right: 14px solid transparent;
-  border-bottom: 14px solid #e26600;
-  border-left: 14px solid transparent;
+  border-right: 13px solid transparent;
+  border-bottom: 13px solid #f45f20;
+  border-left: 13px solid transparent;
 
 }
 
@@ -87,14 +86,14 @@
 
   content: "";
 
-  width: 140px;
-  height: 1px;
+  width: 70%;
+  height: 2px;
 
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
 
-  background: #e26600;
+  background: #f45f20;
 
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.7) 0px 5px 10px;
 }
@@ -102,19 +101,25 @@
 
 .group_box:hover .list_line {
   transition: all 0.7s ease-in-out;
- transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .group_people_list {
   overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
   margin-top: 15px;
   padding: 40px 30px;
 
   position: absolute;
 
-  left: 50%;
+  left: -13px;
 
-  transform: translate(-50%, 0);
+  transform: scale(0);
 
   opacity: 0;
 
@@ -128,6 +133,10 @@
   box-shadow: rgba(0, 0, 0, 0.5) 0px 15px 25px;
 
   border-radius: 50px;
+
+  transition-delay: 0.2s;
+
+  z-index: 1;
 }
 
 .group_people_list::before {
@@ -135,8 +144,8 @@
 
   content: "";
 
-  width: 23px;
-  height: 23px;
+  width: 21px;
+  height: 21px;
 
   background: rgba(0, 0, 0, 0.7);
 
@@ -150,7 +159,7 @@
 
 .group_people_list h4 {
   cursor: pointer;
-  font-size: 42px;
+  font-size: 32px;
   letter-spacing: 0.3em;
 
   font-weight: 700;
@@ -162,27 +171,57 @@
   -webkit-text-fill-color: transparent;
 }
 
-.people_list {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  gap: 20px;
-}
-
-.people_link {
-  font-size: 28px;
-  font-weight: 400;
-
-  color: #000000;
-}
-
 .group_box:hover .group_people_list {
   z-index: 1;
   opacity: 1;
 
   height: 680px;
 
-  transition: all 0.5s ease-in;
+  transform: scale(1);
+  transition: all 0.4s ease-in;
+}
+
+.people_list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+
+}
+
+.people_link {
+  cursor: pointer;
+  display: flex;
+  align-items: end;
+
+  gap: 35px;
+
+  width: 100%;
+}
+
+.people_link img {
+  width: 37px;
+  height: 37px;
+  background: #7656f3;
+
+  border-radius: 20%;
+
+  transition: all 0.4s ease-in-out;
+}
+
+.people_link:hover img {
+
+  transition: all 0.4s ease-in-out;
+  transform: scale(1.2);
+}
+
+.people_link h5 {
+  font-size: 20px;
+
+  line-height: 1;
+  font-weight: 500;
+
+  color: #000000;
 }
 
 .team-lead,
@@ -195,7 +234,7 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 35px;
 
   border: 1px solid #e26600;
-  
+
   border-radius: 50px;
 }
 
@@ -221,7 +260,7 @@
 
   top: 40px;
   right: -40px;
-  
+
 
   opacity: 0;
 
@@ -232,16 +271,17 @@
   transform: scale(0);
 
   transition: all 0.3s ease-in-out;
+  transition-delay: 0.4s;
 
   box-shadow: rgba(0, 0, 0, 0.35) 0px 15px 25px;
 }
 
-.lead_title::before{
+.lead_title::before {
   position: absolute;
   content: '';
 
   top: -7px;
-left: 60%;
+  left: 60%;
 
   width: 15px;
   height: 15px;
@@ -258,9 +298,11 @@ left: 60%;
 .lead_title h4 {
   font-size: 18px;
   opacity: 0;
+
+  transition-delay: 0.4s;
 }
 
-.team-lead:hover .lead_title  {
+.team-lead:hover .lead_title {
   opacity: 0.8;
 
   transform: scale(1);
@@ -271,6 +313,7 @@ left: 60%;
 .team-lead:hover .lead_title h4 {
   opacity: 1;
   color: #ffffff;
+
   transition: all 0.3s ease-in-out;
 }
 
@@ -526,7 +569,7 @@ left: 60%;
 .tree_hover_link_eight:hover.tree_hover_link_eight::after,
 .tree_hover_link_nine:hover.tree_hover_link_nine::after {
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
-    background: #f45f20;
+  background: #f45f20;
 }
 
 .tree_hover_link_ten:hover.tree_hover_link_ten::after,
@@ -539,7 +582,7 @@ left: 60%;
 .tree_hover_link_seventeen:hover.tree_hover_link_seventeen::after,
 .tree_hover_link_eighteen:hover.tree_hover_link_eighteen::after {
   box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
-    background: #7656f3;
+  background: #7656f3;
 }
 
 .tree_hover_link_one:hover .content_block,
